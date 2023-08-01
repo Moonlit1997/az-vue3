@@ -2,8 +2,10 @@
   <div class="main-div">
     Your text here
     <p class="main-div__inner"></p>
+
+    <div class="z-10 ml-8 flex w-1/6 flex-row"><h1>eeee</h1></div>
   </div>
-  <div class="w-32 h-32 bg-blue-500"></div>
+  <div class="h-32 w-32 bg-blue-500"></div>
 </template>
 <script>
 import { ref } from "vue";
@@ -16,13 +18,13 @@ export default {
       public_store: null,
     };
   },
-  created(){
+  created() {
     console.log("created");
   },
-  methods:{
-    init(){
+  methods: {
+    init() {
       console.log("init");
-    }
+    },
   },
   mounted() {
     console.log("mounted");

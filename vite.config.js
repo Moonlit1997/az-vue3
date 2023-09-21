@@ -12,10 +12,14 @@ export default defineConfig({
     }),
     vue(),
   ],
+  server: {
+    host: "0.0.0.0",
+  },
   base: "./",
   build: {
     outDir: "E:/UE4/GHFA_Windows/ZH/UI", // 打包路径
-  },  resolve: {
+  },
+  resolve: {
     alias: [
       //配置别名
       { find: "@", replacement: resolve(__dirname, "src") },

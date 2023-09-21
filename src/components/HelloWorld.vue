@@ -2,7 +2,6 @@
   <div class="main-div">
     Your text here
     <p class="main-div__inner"></p>
-
     <div class="z-10 ml-8 flex w-1/6 flex-row"><h1>eeee</h1></div>
   </div>
   <div class="h-32 w-32 bg-blue-500"></div>

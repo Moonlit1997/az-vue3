@@ -12,7 +12,7 @@ const routes = [
   {
     // 重定向
     path: "/",
-    redirect: "/home",
+    redirect: "Bgfile",
   },
   {
     path: "/home",
@@ -43,6 +43,11 @@ const routes = [
     name: "404",
     component: () => import("../views/404.vue"),
   },
+  {
+    path: "/Bgfile",
+    name: "Bgfile",
+    component: () => import("../views/Bgfile.vue"),
+  },
 ];
 // 3、创建一个路由的对象
 const router = createRouter({
@@ -54,6 +59,12 @@ const router = createRouter({
   history: createWebHashHistory(),
   // 下面这个 可以写成ES6的简写 routers
   routes: routes,
+});
+//前置守卫
+router.beforeEach((to, from, next) => {
+  // 在这里执行前置守卫逻辑
+  // 可以根据需要调用 next() 继续路由导航，或者传递参数中断导航
+  next();
 });
 
 export default router;

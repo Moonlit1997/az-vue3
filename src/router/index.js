@@ -4,7 +4,7 @@ import {
   createWebHashHistory,
 } from "vue-router";
 // 1、引入组件
-import Home from "../views/Home.vue";
+// import Home from "../views/Home.vue";
 /**
  * 2、配置路由映射关系
  */
@@ -17,7 +17,7 @@ const routes = [
   {
     path: "/home",
     name: "Home",
-    component: Home,
+    component: () => import("../views/Home.vue"),
   },
   {
     path: "/about",

@@ -5,11 +5,11 @@
 <template>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
   <RouterView />
-  <!-- <RouterLink to="/">Home</RouterLink> |
+  <RouterLink to="/">Home</RouterLink> |
   <RouterLink to="/about">About</RouterLink> |
   <RouterLink to="/side">Side</RouterLink>|
   <RouterLink to="/user/111">User</RouterLink>|
-  <RouterLink to="/bgfile">Bgfile</RouterLink>| -->
+  <RouterLink to="/bgfile">Bgfile</RouterLink>|
 </template>
 <script>
 export default {

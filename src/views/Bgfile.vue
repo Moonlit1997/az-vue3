@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-screen">
+  <div class="h-screen">
     <img
       src="./../assets/home.png"
       alt="全覆盖图片"
@@ -12,7 +12,6 @@
       class="absolute h-full w-full object-cover"
       v-show="!IsImages"
     />
-
     <!-- 遮罩层 -->
     <div class="absolute"></div>
     <!-- 三栏布局 -->

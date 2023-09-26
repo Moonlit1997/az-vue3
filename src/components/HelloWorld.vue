@@ -1,10 +1,21 @@
 <template>
-  <div class="main-div">
-    Your text here
-    <p class="main-div__inner"></p>
-    <div class="z-10 ml-8 flex w-1/6 flex-row"><h1>eeee</h1></div>
+  <div>
+    <div class="flex h-screen flex-col">
+      <!-- 顶部 -->
+      <div class="flex h-1/4 flex-col">顶部</div>
+      <!-- 主体 -->
+      <div class="flex h-4/6 flex-row">
+        <!-- 左侧 -->
+        <div class="flex w-1/4 flex-row">左侧</div>
+        <!-- 中间 -->
+        <div class="flex flex-auto items-center justify-center">中间</div>
+        <!-- 右侧 -->
+        <div class="flex w-1/4 flex-row">右侧</div>
+      </div>
+      <!-- 底部 -->
+      <div class="flex h-1/6 flex-row">底部</div>
+    </div>
   </div>
-  <div class="h-32 w-32 bg-blue-500"></div>
 </template>
 <script>
 import { ref } from "vue";
@@ -23,6 +34,12 @@ export default {
   methods: {
     init() {
       console.log("init");
+    },
+    change() {
+      console.log("change");
+      // this.IsImages = !this.IsImages;
+      this.$router.push({ path: "/Side" });
+      //改变当前图片images2的地址
     },
   },
   mounted() {

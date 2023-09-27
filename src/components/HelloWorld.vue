@@ -8,7 +8,9 @@
         <!-- 左侧 -->
         <div class="flex w-1/4 flex-row">左侧</div>
         <!-- 中间 -->
-        <div class="flex flex-auto items-center justify-center">中间</div>
+        <div class="flex flex-auto items-center justify-center">
+          <button @click="change">按钮</button>中间
+        </div>
         <!-- 右侧 -->
         <div class="flex w-1/4 flex-row">右侧</div>
       </div>
